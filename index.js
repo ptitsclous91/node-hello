@@ -1,11 +1,18 @@
-/* 
+ 
 var express = require("express");
-var server = express();
+var app = express();
 
 server.get("/url", (req, res, next) => {
   res.json(["AAAA","BBBB","CCCC","DDDD","EEEE"]);
  });
-*/
+
+app.listen(3000, () => {
+ console.log("Server running on port 3000");
+});
+
+
+
+/*
 const http = require('http');
 const port = process.env.PORT || 3000;
 
@@ -18,3 +25,4 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
 });
+*/
