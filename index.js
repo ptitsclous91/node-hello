@@ -1,7 +1,7 @@
 var express = require("express");
 var server = express();
 
-app.get("/url", (req, res, next) => {
+server.get("/url", (req, res, next) => {
   res.json(["AAAA","BBBB","CCCC","DDDD","EEEE"]);
  });
 
