@@ -1,3 +1,10 @@
+var express = require("express");
+var server = express();
+
+app.get("/url", (req, res, next) => {
+  res.json(["AAAA","BBBB","CCCC","DDDD","EEEE"]);
+ });
+
 const http = require('http');
 const port = process.env.PORT || 3000;
 
